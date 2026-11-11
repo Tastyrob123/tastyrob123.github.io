@@ -6,7 +6,7 @@
     var n = navigator, w = window, d = document, q = location.search;
     if (/[?&]ich=aus\b/.test(q)) localStorage.removeItem('tasty-ich');
     else if (/[?&]ich\b/.test(q)) localStorage.setItem('tasty-ich', '1');
-    if (w.__besuch || !n.sendBeacon || n.webdriver || w.self !== w.top || !/(\.vercel\.app|(^|\.)tasty-studios\.de|(^|\.)tastystudios\.ch)$/.test(location.hostname)) return;
+    if (w.__besuch || !n.sendBeacon || n.webdriver || w.self !== w.top || !/(\.vercel\.app|(^|\.)tasty-studios\.de|(^|\.)tastystudios\.ch|^tastyrob123\.github\.io)$/.test(location.hostname)) return;
     if (localStorage.getItem('tasty-ich')) return;
     w.__besuch = 1;
     /* Empfänger (Robert 17.10.2026): ?f=<code> aus dem verschickten Link (besuche.py link), je Gerät gemerkt, damit spätere Aufrufe den Namen tragen */

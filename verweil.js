@@ -10,7 +10,7 @@
     var w = window, n = navigator, d = document;
     if (w.__verweil || !n.sendBeacon || n.webdriver || w.self !== w.top || !w.IntersectionObserver) return;
     var host = location.hostname, ZIEL = w.__verweilZiel || 'https://tasty-besuche.vercel.app/api/b?w=1';
-    if (!/(\.vercel\.app|(^|\.)tasty-studios\.de|(^|\.)tastystudios\.ch)$/.test(host) && !w.__verweilZiel) return;
+    if (!/(\.vercel\.app|(^|\.)tasty-studios\.de|(^|\.)tastystudios\.ch|^tastyrob123\.github\.io)$/.test(host) && !w.__verweilZiel) return;
     if (localStorage.getItem('tasty-ich')) return;
     w.__verweil = 1;
     /* Empfänger (Robert 17.10.2026: «eigener Link je Empfänger»): ?f=<code> aus dem verschickten Link, besuch.js merkt ihn sich je Gerät */
